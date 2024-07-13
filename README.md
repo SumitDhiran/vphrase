@@ -1,4 +1,3 @@
-```markdown
 # Movies Dashboard Application
 
 This application provides a Movies Dashboard, built with a Django backend and a React frontend. It visualizes various movie statistics, such as top-grossing movies and top-rated movies.
@@ -70,8 +69,3 @@ This application provides a Movies Dashboard, built with a Django backend and a 
    ```
 
 4. Access the Movies Dashboard at [http://localhost:3000](http://localhost:3000).
-
-## License
-
-This project is licensed under the MIT License.
-```
