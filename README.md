@@ -1,14 +1,37 @@
-# vphrase
-Steps to run the application locally using Docker-compose
-Use docker-compose up –build to run and build the docker images.
-Go to http://0.0.0.0:3000/ to view the Movies Dashboard.
+# Movies Dashboard Application
 
-Steps to run the application locally without using Docker-compose
-Start the backend service:
-cd into backend(django) service and run migrations using “python manage.py migrate”.
-Run the preprocess.py file located in core app using “python ./core/preprocess.py” to clean and populate db using movies csv file.
-Run the development server using “python manage.py runserver 0.0.0.0:8000” and got to “http://localhost:8000/api/schema/swagger-ui/#/” to checkout swagger.
+This application provides a Movies Dashboard, built with a Django backend and a React frontend. It allows users to visualize various statistics about movies, such as the top-grossing movies, top-rated movies, and more.
 
-Start the frontend service:
-cd into frontend/vphrase/ and run “npm install” to install dependencies.
-Use “npm start” to start the server and go to “http://localhost:3000” to view the dashboard.
+## Table of Contents
+
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Running the Application Locally](#running-the-application-locally)
+  - [Using Docker-compose](#using-docker-compose)
+  - [Without Docker-compose](#without-docker-compose)
+    - [Start the Backend Service](#start-the-backend-service)
+    - [Start the Frontend Service](#start-the-frontend-service)
+- [API Documentation](#api-documentation)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Features
+
+- Visualize top 5 movies by gross for a particular year.
+- Visualize top 5 movies or series of all time according to votes.
+- Visualize top 10 movies according to rating for a particular year.
+
+## Prerequisites
+
+- Docker and Docker-compose (if using Docker)
+- Python 3.9 or higher (if running locally without Docker)
+- Node.js and npm (if running locally without Docker)
+
+## Running the Application Locally
+
+### Using Docker-compose
+
+1. **Build and run the Docker images**:
+   ```sh
+   docker-compose up --build
